@@ -1,4 +1,12 @@
 # README
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false|
+### Association
+- has_many :chats
+- has_many :groups
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
