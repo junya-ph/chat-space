@@ -1,3 +1,5 @@
+@import "variables";
+
 * {
   box-sizing: border-box;
 }
@@ -6,75 +8,12 @@
   display: flex;
 }
 
-// サイドバー
-
-.side-bar {
-  height: 100vh;
-  width: 300px;
-  .user-name {
-    height: 100px;
-    background-color: #253141;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    .top-item {
-      height: 20px;
-      width: 260px;
-      line-height: 20px;
-      display: flex;
-      justify-content: space-between;
-      &__icons {
-        width: 60p;
-        display: flex;
-        color: #ffffff;
-        &__edit {
-          margin-right: 5px;
-          &__btn{
-            color: #ffffff;
-          }
-        }
-        &__cog {
-          &__btn {
-            color: #ffffff;
-          }
-        }
-      }
-    }
-  }
-  .group {
-    height: calc(100% - 100px);
-    background-color: #2f3e51;
-    &__name {
-      color: #ffffff ;
-      font-size: 15px;
-      font-weight: bold;
-      height: 15px;
-      width: 100%;
-      padding: 20px 5px 20px 20px;
-    }
-    &__message {
-      color: #ffffff;
-      font-size: 11px;
-      font-weight: bold;
-      height: 20px;
-      width: 100%;
-      padding: 0 40px 20px 20px;
-    }
-  }
-}
-
-
-// メインチャット
-
 .main-chat {
   height: 100vh;
   width: calc(100vw - 300px);
   .group-info {
     height: 100px;
-    background-color: #ffffff;
+    background-color: $white;
     display: flex;
     justify-content: space-between;
     .left-box {
