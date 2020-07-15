@@ -2,14 +2,14 @@
   .user-name
     .top-item
       .top-item__name
-        masa
+        = current_user.name
       .top-item__icons
         .top-item__icons__edit
           = link_to "#", class: "top-item__icons__edit__btn" do
             = icon('far', 'edit')
         .top-item__icons__cog
-          = link_to "#", class: "top-item__icons__cog__btn" do
-            = icon('fas', 'cog')
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'top-item__icons__edit__btn')
   .group
     .group__name
       techcamp
