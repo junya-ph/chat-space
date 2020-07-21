@@ -34,9 +34,11 @@
       }
     }
   }
-  .group {
+  .groups {
     height: calc(100% - 100px);
     background-color: #2f3e51;
+  }
+  .group {
     &__name {
       color: $white;
       font-size: 15px;
